@@ -13,6 +13,18 @@
     transition: all 0.3s ease-in-out;
 }
 
+@keyframes gradAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 li {
     @include reset-list;
     cursor: pointer;
@@ -91,13 +103,37 @@ header {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+
+    background: linear-gradient(90deg, #ff007f, #000);
+    color: transparent;
+    background-clip: text;
+    background-size: 600% 600%;
+    animation: gradAnimation 5s ease-in-out infinite;
 }
 
-.checkbox {
-    width: 30px;
+@keyframes marquee {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.marqueeContainer {
+    width: 100%;
     height: 30px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid #ff007f;
+    display: flex;
+    align-items: center;
 }
 
-.LuSun:hover {
-    color: red;
+.marqueeContent {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
 }

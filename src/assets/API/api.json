@@ -1,0 +1,75 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Футболка",
+            "price": 20.0,
+            "category": "Одежда",
+            "image": "https://roba.pro/upload/iblock/b3a/8cdwjr551my173fgoa6vyo65hgjfpre5/1527.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Джинсы",
+            "price": 50.0,
+            "category": "Одежда",
+            "image": "https://cdn.finnflare.com/upload/resize_cache/full_size/FAC/127/800_1200_2/FAC25004_127_30.jpg?cdn=1664202924"
+        },
+        {
+            "id": 3,
+            "name": "Кроссовки",
+            "price": 80.0,
+            "category": "Обувь",
+            "image": "https://img.joomcdn.net/840e1c14a91cf664790dae80a73fc7021e6d4ae3_original.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Ноутбук",
+            "price": 600.0,
+            "category": "Электроника",
+            "image": "https://ipixel.ru/upload/iblock/226/yrc66iwfwhcy9135i4l8s6v7haltwbjp.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Смартфон",
+            "price": 400.0,
+            "category": "Электроника",
+            "image": "https://main-cdn.sbermegamarket.ru/big1/hlr-system/204/838/570/310/121/938/100042333241b0.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "Книга",
+            "price": 15.0,
+            "category": "Книги",
+            "image": "https://img4.labirint.ru/rc/e6f9b60e5e8543e47e3eb413cc8de87c/236x364q80/books68/673048/cover.png?1564161958"
+        },
+        {
+            "id": 7,
+            "name": "Футбольный мяч",
+            "price": 30.0,
+            "category": "Спорттовары",
+            "image": "https://www.footballstore.ru/images/gal/22176/goods_22176_8_thumb5.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Кофеварка",
+            "price": 50.0,
+            "category": "Кухонная техника",
+            "image": "https://main-cdn.sbermegamarket.ru/big1/hlr-system/-10/058/529/741/225/222/2/100025486697b0.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Сумка",
+            "price": 40.0,
+            "category": "Аксессуары",
+            "image": "https://shop-cdn1-2.vigbo.tech/shops/175339/products/21391524/images/3-43cc25a54b62990d5a105d198fb73303.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Шарф",
+            "price": 15.0,
+            "category": "Аксессуары",
+            "image": "https://shaparbrand.ru/wp-content/uploads/2020/09/seryj-sharf-muzhskoj-2-630x840.jpg"
+        }
+    ],
+    "categories": ["Одежда", "Обувь", "Электроника"]
+}

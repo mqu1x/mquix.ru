@@ -1,0 +1,88 @@
+@mixin smoothing {
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes showPopup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes closePopup {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.popup {
+    animation: showPopup 0.5s ease-in;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.close {
+    animation: closePopup 0.3s ease-in;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.close:hover {
+    border: 1px solid #ff007f;
+    box-shadow: 0px 0px 20px #ff007f;
+    @include smoothing;
+}
+
+.popup h1 {
+    font-size: 3rem;
+    margin: 100px 0;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputLogin {
+    margin: 30px 0;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.submit {
+    margin: 30px 0;
+    background-color: transparent;
+    color: #fff;
+    width: 80%;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.submit:hover {
+    border: 1px solid #ff007f;
+}
